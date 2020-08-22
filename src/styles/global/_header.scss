@@ -42,15 +42,16 @@ header {
                         align-items: center;
                         justify-content: space-evenly;
                         animation: profileIn 1s ease-out forwards;
+                        // display: none;
                         h6 {
                             font-size: 16px;
                             font-weight: 100;
-                            animation: profileInChildren 2s ease-out forwards;
+                            animation: profileInChildren 1s ease-out forwards;
                         }
                         .stars {
                             display: flex;
                             align-items: center;
-                            animation: profileInChildren 2s ease-out forwards;
+                            animation: profileInChildren 1s ease-out forwards;
                             img {
                                 filter: invert(75%) sepia(45%) saturate(2605%) hue-rotate(322deg) brightness(102%)
                                     contrast(102%);
@@ -66,12 +67,16 @@ header {
                     &:hover {
                         background: var(--blue);
                         .user-info {
+                            display: flex;
                             color: white;
                             .stars img {
                                 filter: invert(80%) sepia(55%) saturate(510%) hue-rotate(347deg) brightness(104%)
                                     contrast(105%);
                             }
                         }
+                        // .user-info {
+                        //     display: flex;
+                        // }
                     }
                 }
                 &.login-register {

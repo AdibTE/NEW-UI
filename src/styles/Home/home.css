@@ -31,6 +31,7 @@ section#Home .search-box {
           justify-content: space-between;
   margin-top: 1rem;
   border: 6px solid #f3f3f3;
+  background-color: #fff;
   border-radius: 50px;
   -webkit-transition: .1s ease;
   transition: .1s ease;

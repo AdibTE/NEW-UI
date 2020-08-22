@@ -81,8 +81,8 @@ header nav ul li .profile .user-info {
 header nav ul li .profile .user-info h6 {
   font-size: 16px;
   font-weight: 100;
-  -webkit-animation: profileInChildren 2s ease-out forwards;
-          animation: profileInChildren 2s ease-out forwards;
+  -webkit-animation: profileInChildren 1s ease-out forwards;
+          animation: profileInChildren 1s ease-out forwards;
 }
 
 header nav ul li .profile .user-info .stars {
@@ -92,8 +92,8 @@ header nav ul li .profile .user-info .stars {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-animation: profileInChildren 2s ease-out forwards;
-          animation: profileInChildren 2s ease-out forwards;
+  -webkit-animation: profileInChildren 1s ease-out forwards;
+          animation: profileInChildren 1s ease-out forwards;
 }
 
 header nav ul li .profile .user-info .stars img {
@@ -114,6 +114,9 @@ header nav ul li .profile:hover {
 }
 
 header nav ul li .profile:hover .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
 }
 
@@ -231,7 +234,10 @@ header nav .nav-logo h1 {
   0% {
     opacity: 0;
   }
-  to {
+  50% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -240,7 +246,10 @@ header nav .nav-logo h1 {
   0% {
     opacity: 0;
   }
-  to {
+  50% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
