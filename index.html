@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نیو | سامانه ثبت پروژه</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="./src/styles/global/global.css">
+    <link rel="stylesheet" href="./src/styles/Home/home.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <!-- <li><a href=""><i class="fas fa-bars"></i></a></li> -->
+                <li><a href="" class="profile">
+                    <img src="./src/images/index.jpg" alt="">
+                    <div class="user-info">
+                        <h6>ادیب مردوخ روحانی</h6>
+                        <span class="stars">
+                            <img src="./src/images/icons/star_rate-24px.svg" alt="">
+                            <img src="./src/images/icons/star_rate-24px.svg" alt="">
+                            <img src="./src/images/icons/star_rate-24px.svg" alt="">
+                            <img src="./src/images/icons/star_rate-24px.svg" alt="">
+                            <img src="./src/images/icons/star_rate-24px.svg" alt="">
+                            <p>(60 امتیاز)</p>
+                        </span>
+                    </div>
+                </a></li>
+                <!-- <li class="login-register">
+                    <a href="/login.html">ورود</a>
+                    <a href="/register.html">ثبت‌نام</a>
+                </li> -->
+                <li><a href="/projects.html">پروژه‌ها</a></li>
+                <li><a href="">نیو چیه؟</a></li>
+            </ul>
+            <div class="nav-logo">
+                <a href=""><h1>نیو</h1></a>
+            </div>
+        </nav>
+    </header>
+    <section id="Home">
+        <div class="content">
+            <h2>با یک کلیک پروژه‌ای که می‌خوای رو تحویل بگیر</h2>
+            <form class="search-box">
+                <input type="text" placeholder="جستجو در میان هزاران پروژه...">
+                <button><img src="./src/images/icons/search-24px.svg"></button>
+            </form>
+            <ul class="popular">
+                <li>محبوب:</li>
+                <li><h3>برنامه نویسی</h3></li>
+                <li><h3>طراحی لوگو</h3></li>
+                <li><h3>ترجمه</h3></li>
+            </ul>
+            <a class="next-section" href="#Categories">
+                <img src="./src/images/icons/fa-angle-down-light.svg">
+            </a>
+        </div>
+    </section>
+    <section id="Categories" class="container">
+        <h1>خدمات حرفه‌ای محبوب</h1>
+        <div class="cat-list">
+            <a href="#" class="cat-card">
+                <img class="bg" src="./src/images/computer.jpg" alt="">
+                <h2>برنامه‌نویسی</h2>
+                <img class="icon" src="./src/images/icons/fa-angle-down-light.svg" alt="">
+            </a>
+            <a href="#" class="cat-card">
+                <img class="bg" src="./src/images/designer.webp" alt="">
+                <h2>طراحی</h2>
+                <img class="icon" src="./src/images/icons/fa-angle-down-light.svg" alt="">
+            </a>
+            <a href="#" class="cat-card">
+                <img class="bg" src="./src/images/translator.webp" alt="">
+                <h2>ترجمه</h2>
+                <img class="icon" src="./src/images/icons/fa-angle-down-light.svg" alt="">
+            </a>
+        </div>
+    </section>
+    <section id="UserType" class="container">
+        <h1>همین حالا ملحق شوید</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="./src/images/icons/document.svg" alt="">
+                <h2>کارجو هستم</h2>
+                <p>من می‌خوام فلان کنم بهمان کنم، میخوام فلان کنم بهمان کنم میخوام</p>
+                <a href="/login">پروژه می‌خوام</a>
+            </div>
+            <div class="card">
+                <img src="./src/images/icons/briefcase.svg" alt="">
+                <h2>کارفرما هستم</h2>
+                <p>من می‌خوام فلان کنم بهمان کنم، میخوام فلان کنم بهمان کنم میخوام</p>
+                <a href="/login">پروژه دارم</a>
+            </div>
+        </div>
+    </section>
+    <script src="./src/scripts/global.js"></script>
+    <script src="./src/scripts/home.js"></script>
+</body>
+</html>
