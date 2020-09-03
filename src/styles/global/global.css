@@ -76,6 +76,7 @@ header nav ul li .profile .user-info {
           justify-content: space-evenly;
   -webkit-animation: profileIn 1s ease-out forwards;
           animation: profileIn 1s ease-out forwards;
+  line-height: 18px;
 }
 
 header nav ul li .profile .user-info h6 {
@@ -85,7 +86,8 @@ header nav ul li .profile .user-info h6 {
           animation: profileInChildren 1s ease-out forwards;
 }
 
-header nav ul li .profile .user-info .stars {
+header nav ul li .profile .user-info .stars,
+header nav ul li .profile .user-info .projects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,9 +96,11 @@ header nav ul li .profile .user-info .stars {
           align-items: center;
   -webkit-animation: profileInChildren 1s ease-out forwards;
           animation: profileInChildren 1s ease-out forwards;
+  line-height: 10px;
 }
 
-header nav ul li .profile .user-info .stars img {
+header nav ul li .profile .user-info .stars img,
+header nav ul li .profile .user-info .projects img {
   -webkit-filter: invert(75%) sepia(45%) saturate(2605%) hue-rotate(322deg) brightness(102%) contrast(102%);
           filter: invert(75%) sepia(45%) saturate(2605%) hue-rotate(322deg) brightness(102%) contrast(102%);
   margin-left: 5px;
@@ -105,8 +109,13 @@ header nav ul li .profile .user-info .stars img {
           transform: translateY(-1px);
 }
 
-header nav ul li .profile .user-info .stars p {
+header nav ul li .profile .user-info .stars p,
+header nav ul li .profile .user-info .projects p {
   font-size: 10px;
+}
+
+header nav ul li .profile .user-info .projects {
+  color: var(--orange);
 }
 
 header nav ul li .profile:hover {
@@ -123,6 +132,10 @@ header nav ul li .profile:hover .user-info {
 header nav ul li .profile:hover .user-info .stars img {
   -webkit-filter: invert(80%) sepia(55%) saturate(510%) hue-rotate(347deg) brightness(104%) contrast(105%);
           filter: invert(80%) sepia(55%) saturate(510%) hue-rotate(347deg) brightness(104%) contrast(105%);
+}
+
+header nav ul li .profile:hover .user-info .projects {
+  color: #ffe051;
 }
 
 header nav ul li.login-register {
@@ -276,6 +289,30 @@ header nav .nav-logo h1 {
   }
 }
 
+@-webkit-keyframes alertIn {
+  0% {
+    right: -100%;
+  }
+  80% {
+    right: 20px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes alertIn {
+  0% {
+    right: -100%;
+  }
+  80% {
+    right: 20px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
 @font-face {
   font-family: 'IranSans';
   src: url("../../fonts/IRANSansWeb.eot"), url("../../fonts/IRANSansWeb.woff2") format("woff2"), url("../../fonts/IRANSansWeb.woff") format("woff"), url("../../fonts/IRANSansWeb.ttf") format("truetype");
@@ -295,11 +332,12 @@ header nav .nav-logo h1 {
 :root {
   --blue: #5c53ff;
   --blue-shadow: #5b53ff3a;
-  --grey: #eeecff;
+  --grey: #e8e6f8;
   --darkgrey: #b2b1ba;
   --orange: #ff9454;
   --black: #666;
   --white: #fdfdfd;
+  --radius: 10px;
 }
 
 * {
@@ -344,6 +382,67 @@ ul {
 .container {
   width: 95%;
   margin: auto;
+}
+
+.alerts-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 3;
+}
+
+.alerts-wrapper .alert {
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .8rem;
+  margin-top: 1rem;
+  border-radius: var(--radius);
+  background-color: var(--white);
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1), 0 5px 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1), 0 5px 20px rgba(0, 0, 0, 0.05);
+  -webkit-animation: alertIn .8s ease 1 forwards;
+          animation: alertIn .8s ease 1 forwards;
+  position: relative;
+}
+
+.alerts-wrapper .alert > i {
+  margin-left: 1rem;
+  padding: .5rem;
+  border-radius: var(--radius);
+  color: white;
+}
+
+.alerts-wrapper .alert > i.fa-check {
+  background-color: green;
+}
+
+.alerts-wrapper .alert > i.fa-exclamation {
+  background-color: #e1b300;
+}
+
+.alerts-wrapper .alert > i.fa-times {
+  background-color: #db2121;
+}
+
+.alerts-wrapper .alert button {
+  margin-right: 1rem;
+  background: none;
+  border: none;
+  line-height: 14px;
+  cursor: pointer;
+  color: var(--darkgrey);
 }
 
 @media (min-width: 768px) {

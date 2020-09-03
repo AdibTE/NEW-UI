@@ -26,11 +26,35 @@ section#SearchBox .search-box button {
   outline: none;
 }
 
+section#SearchBox .search-box select {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: none;
+  -moz-appearance: none;
+  border: none;
+  border-left: 1px solid #f3f3f3;
+  padding: 0 1rem 0 2rem;
+  color: var(--black);
+}
+
+section#SearchBox .search-box select + i {
+  -webkit-transform: translateX(23px);
+          transform: translateX(23px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--black);
+  font-size: 12px;
+}
+
 section#SearchBox .search-box input {
   background-color: transparent;
-  padding: 0 2rem;
+  padding: 0 12px 0 2rem;
   color: var(--blue);
-  width: calc(100% - 50px);
+  width: calc(100% - 175px);
 }
 
 section#SearchBox .search-box input:placeholder-shown {
@@ -153,6 +177,8 @@ section#Projects .project-list .project-item {
   -webkit-box-shadow: 0 0 10px var(--grey);
           box-shadow: 0 0 10px var(--grey);
   color: var(--black);
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 section#Projects .project-list .project-item h3 {
@@ -170,6 +196,8 @@ section#Projects .project-list .project-item p span {
   padding: .2rem .5rem;
   border-radius: 10px;
   border: 1px solid var(--grey);
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
 }
 
 section#Projects .project-list .project-item p span i {
@@ -181,7 +209,19 @@ section#Projects .project-list .project-item p span:not(:last-of-type) {
   margin-left: 1rem;
 }
 
+section#Projects .project-list .project-item p span:hover {
+  background-color: var(--orange);
+  color: white;
+  border-color: var(--orange);
+}
+
+section#Projects .project-list .project-item p span:hover i {
+  color: white;
+}
+
 section#Projects .project-list .project-item:hover {
   color: var(--blue);
+  -webkit-box-shadow: 0 0px 10px var(--grey), 0 5px 10px var(--grey);
+          box-shadow: 0 0px 10px var(--grey), 0 5px 10px var(--grey);
 }
 /*# sourceMappingURL=projects.css.map */

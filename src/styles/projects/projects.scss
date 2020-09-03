@@ -16,11 +16,28 @@ section#SearchBox {
             border: 0;
             outline: none;
         }
+        select{
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background:none;
+            -moz-appearance: none;
+            border: none;
+            border-left: 1px solid #f3f3f3;
+            padding:0 1rem 0 2rem;
+            color: var(--black);
+        }
+        select + i{
+            transform: translateX(23px);
+            display: flex;
+            align-items: center;
+            color: var(--black);
+            font-size:12px
+        }
         input {
             background-color: transparent;
-            padding: 0 2rem;
+            padding: 0 12px 0 2rem;
             color: var(--blue);
-            width: calc(100% - 50px);
+            width: calc(100% - 175px);
             &:placeholder-shown {
                 color: var(--darkgrey);
             }
@@ -107,8 +124,8 @@ section#Projects {
     .project-list {
         column-count: 2;
         .project-item {
-            display:inline-block;
-            width:100%;
+            display: inline-block;
+            width: 100%;
             background-color: var(--grey);
             background-color: #fff;
             border-radius: 10px;
@@ -116,29 +133,40 @@ section#Projects {
             margin-bottom: 1rem;
             box-shadow: 0 0 10px var(--grey);
             color: var(--black);
+            transition: .2s;
             h3 {
                 margin-bottom: 2rem;
                 font-size: 18px;
             }
             p {
                 font-size: 12px;
-                text-align:left;
+                text-align: left;
                 span {
                     background-color: #fff;
-                    padding:.2rem .5rem;
+                    padding: .2rem .5rem;
                     border-radius: 10px;
-                    border:1px solid var(--grey);
+                    border: 1px solid var(--grey);
+                    transition: .2s ease;
                     i {
                         color: var(--orange);
                         margin-left: .2rem;
                     }
-                    &:not(:last-of-type){
-                    margin-left: 1rem;
+                    &:not(:last-of-type) {
+                        margin-left: 1rem;
+                    }
+                    &:hover {
+                        background-color: var(--orange);
+                        color: white;
+                        border-color: var(--orange);
+                        i {
+                            color: white;
+                        }
                     }
                 }
             }
             &:hover {
                 color: var(--blue);
+                box-shadow: 0 0px 10px var(--grey), 0 5px 10px var(--grey);
             }
         }
     }

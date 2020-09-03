@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نیو | سامانه ثبت پروژه</title>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="./src/styles/global/global.css">
+    <link rel="stylesheet" href="./src/styles/create/create.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="" class="profile">
+                    <img src="./src/images/index.jpg" alt="">
+                    <div class="user-info">
+                        <h6>ادیب مردوخ روحانی</h6>
+                        <span class="projects">
+                            <p>3 پروژه فعال - 1 پروژه درحال انجام</p>
+                        </span>
+                    </div>
+                </a></li>
+                <li><a href="/projects.html">پروژه‌ها</a></li>
+                <li><a href="">نیو چیه؟</a></li>
+            </ul>
+            <div class="nav-logo">
+                <a href="/"><h1>نیو</h1></a>
+            </div>
+        </nav>
+    </header>
+    <section id="CreateProject" class="container">
+        <form>
+            <h1>ثبت پروژه جدید</h1>
+            <div class="input">
+                <label>عنوان</label>
+                <input type="title" name="name">
+            </div>
+            <div class="input">
+                <label>توضیحات</label>
+                <textarea name="description" rows="5"></textarea>
+            </div>
+            <div class="input">
+                <label>پیوست</label>
+                <input type="file" name="attachments" dir="ltr" id="attach" multiple>
+                <label class="file-label" for="attach"><i class="fas fa-upload"></i>انتخاب فایل</label>
+            </div>
+            <div class="input">
+                <label>دسته‌بندی</label>
+                <select name="category">
+                    <option value='' disabled selected>
+                        -- انتخاب کنید --
+                    </option>
+                    <option value='1'>
+                        123
+                    </option>
+                </select>
+            </div>
+            <div class="input">
+                <label>کیفیت پروژه</label>
+                <select name="starsNeed">
+                    <option value='' disabled selected>
+                        -- انتخاب کنید --
+                    </option>
+                    <option value='1'>
+                        123
+                    </option>
+                </select>
+            </div>
+            <div class="input">
+                <label>زمان تحویل</label>
+                <input type="date" name="forceTime">
+            </div>
+            <button>ثبت پروژه و پرداخت</button>
+        </form>
+        <div class="steps-container">
+            <div class="step">
+                <span></span>
+                <p>توضیحات و مشخصات پروژه</p>
+            </div>
+            <div class="step">
+                <span></span>
+                <p>پرداخت و ثبت نهایی پروژه</p>
+            </div>
+        </div>
+    </section>
+    <script src="./src/scripts/global.js"></script>
+</body>
+</html>

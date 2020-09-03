@@ -42,16 +42,19 @@ header {
                         align-items: center;
                         justify-content: space-evenly;
                         animation: profileIn 1s ease-out forwards;
+                        line-height: 18px;
                         // display: none;
                         h6 {
                             font-size: 16px;
                             font-weight: 100;
                             animation: profileInChildren 1s ease-out forwards;
                         }
-                        .stars {
+                        .stars,
+                        .projects {
                             display: flex;
                             align-items: center;
                             animation: profileInChildren 1s ease-out forwards;
+                            line-height: 10px;
                             img {
                                 filter: invert(75%) sepia(45%) saturate(2605%) hue-rotate(322deg) brightness(102%)
                                     contrast(102%);
@@ -63,6 +66,9 @@ header {
                                 font-size: 10px;
                             }
                         }
+                        .projects{
+                            color: var(--orange);
+                        }
                     }
                     &:hover {
                         background: var(--blue);
@@ -72,6 +78,9 @@ header {
                             .stars img {
                                 filter: invert(80%) sepia(55%) saturate(510%) hue-rotate(347deg) brightness(104%)
                                     contrast(105%);
+                            }
+                            .projects{
+                                color: #ffe051;
                             }
                         }
                         // .user-info {

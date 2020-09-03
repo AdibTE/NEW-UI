@@ -39,12 +39,19 @@
                 <li><a href="">نیو چیه؟</a></li>
             </ul>
             <div class="nav-logo">
-                <a href=""><h1>نیو</h1></a>
+                <a href="/"><h1>نیو</h1></a>
             </div>
         </nav>
     </header>
     <section id="SearchBox" class="container">
         <form class="search-box">
+            <select id="projects">
+                <option value="all">
+                    همه پروژه ها <i class="fas fa-angle-down"></i>
+                </option>
+                <option value="mine">پروژه های من</option>
+            </select>
+            <i class="fas fa-angle-down"></i>
             <input type="text" placeholder="جستجو در میان هزاران پروژه...">
             <button><img src="./src/images/icons/search-24px.svg"></button>
         </form>
