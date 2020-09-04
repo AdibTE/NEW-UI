@@ -348,6 +348,10 @@ header nav .nav-logo h1 {
   font-family: 'IranSans';
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   scroll-behavior: smooth;
 }

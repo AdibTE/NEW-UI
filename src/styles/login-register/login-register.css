@@ -104,6 +104,7 @@ section#Login form button {
   color: white;
   text-align: center;
   width: 100%;
+  cursor: pointer;
 }
 
 section#Login form .links {

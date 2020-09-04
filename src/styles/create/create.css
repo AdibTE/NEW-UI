@@ -109,6 +109,10 @@ section#CreateProject form .input .file-label:focus {
   border-right-color: var(--blue);
 }
 
+section#CreateProject form .input select {
+  -moz-appearance: none;
+}
+
 section#CreateProject form .input input[type="file"] {
   width: 0.1px;
   height: 0.1px;
@@ -175,7 +179,6 @@ section#CreateProject .steps-container .step {
   transition: .2s;
   width: 100%;
   white-space: nowrap;
-  cursor: pointer;
 }
 
 section#CreateProject .steps-container .step span {
@@ -204,9 +207,5 @@ section#CreateProject .steps-container .step:not(:last-of-type) :before {
   left: -3.5rem;
   width: 5rem;
   border-bottom: 2px dashed var(--darkgrey);
-}
-
-section#CreateProject .steps-container .step:hover {
-  color: var(--orange);
 }
 /*# sourceMappingURL=create.css.map */

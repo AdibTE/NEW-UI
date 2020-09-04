@@ -21,6 +21,7 @@ section#SearchBox {
             border-bottom-right-radius: 25px;
             background:none;
             -moz-appearance: none;
+            appearance: none;
             border: none;
             border-left: 1px solid #f3f3f3;
             padding:0 1rem 0 2rem;
@@ -37,7 +38,7 @@ section#SearchBox {
             background-color: transparent;
             padding: 0 12px 0 2rem;
             color: var(--blue);
-            width: calc(100% - 175px);
+            width: calc(100% - 185px);
             &:placeholder-shown {
                 color: var(--darkgrey);
             }
@@ -155,12 +156,8 @@ section#Projects {
                         margin-left: 1rem;
                     }
                     &:hover {
-                        background-color: var(--orange);
-                        color: white;
-                        border-color: var(--orange);
-                        i {
-                            color: white;
-                        }
+                        background-color: var(--grey);
+                        color: var(--orange);
                     }
                 }
             }
