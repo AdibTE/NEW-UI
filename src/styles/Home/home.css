@@ -30,7 +30,7 @@ section#Home .search-box {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1rem;
-  border: 6px solid #f3f3f3;
+  border: 6px solid var(--lightgrey);
   background-color: #fff;
   border-radius: 50px;
   -webkit-transition: .1s ease;

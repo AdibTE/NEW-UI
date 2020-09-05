@@ -24,7 +24,8 @@
 :root {
     --blue: #5c53ff;
     --blue-shadow: #5b53ff3a;
-    --grey: #e8e6f8;
+    --lightgrey: #ebe8ff;
+    --grey: #dcd7ff;
     --darkgrey: #b2b1ba;
     --orange: #ff9454;
     --black: #666;
@@ -48,6 +49,7 @@ html {
 
 body {
     background: var(--white);
+    position: relative;
 }
 
 a {

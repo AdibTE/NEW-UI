@@ -1,3 +1,17 @@
+footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 1.5rem;
+  -webkit-box-shadow: 0 0px 20px var(--grey) inset;
+          box-shadow: 0 0px 20px var(--grey) inset;
+  line-height: 12px;
+}
+
+footer img {
+  width: 50px;
+  margin-bottom: .5rem;
+}
+
 header {
   -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
           box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
@@ -41,7 +55,7 @@ header nav ul li .profile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: var(--grey);
+  background: var(--lightgrey);
   height: 50px;
   border-radius: 25px;
   -webkit-transition: .3s ease;
@@ -151,7 +165,7 @@ header nav ul li.login-register a {
   width: 100%;
   padding: .5rem 0;
   border-radius: 25px 0 0 25px;
-  background: var(--grey);
+  background: var(--lightgrey);
   text-align: center;
 }
 
@@ -195,6 +209,16 @@ header nav .nav-logo h1 {
   letter-spacing: -1px;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+}
+
+header nav .nav-logo a {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+header nav .nav-logo a img {
+  width: 3.5em;
 }
 
 @-webkit-keyframes searchSpinner {
@@ -332,7 +356,8 @@ header nav .nav-logo h1 {
 :root {
   --blue: #5c53ff;
   --blue-shadow: #5b53ff3a;
-  --grey: #e8e6f8;
+  --lightgrey: #ebe8ff;
+  --grey: #dcd7ff;
   --darkgrey: #b2b1ba;
   --orange: #ff9454;
   --black: #666;
@@ -358,6 +383,7 @@ html {
 
 body {
   background: var(--white);
+  position: relative;
 }
 
 a {
