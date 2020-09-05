@@ -111,7 +111,7 @@ section#Home {
         position: absolute;
         width: 400px;
         height: 400px;
-        background: var(--grey);
+        background: var(--lightgrey);
         z-index:-1;
     }
     &:after{
@@ -211,7 +211,7 @@ section#UserType {
         align-items: stretch;
         .card {
             background-color: var(--white);
-            border: 3px solid var(--grey);
+            border: 3px solid var(--lightgrey);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -238,7 +238,7 @@ section#UserType {
                 color: var(--black);
             }
             &:hover {
-                background-color: var(--grey);
+                background-color: var(--lightgrey);
                 a {
                     background-color: var(--blue);
                     color: white;

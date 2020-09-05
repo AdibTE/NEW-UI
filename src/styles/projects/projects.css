@@ -205,6 +205,8 @@ section#Projects .project-list .project-item p span {
 section#Projects .project-list .project-item p span i {
   color: var(--orange);
   margin-left: .2rem;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 section#Projects .project-list .project-item p span:not(:last-of-type) {
@@ -213,7 +215,10 @@ section#Projects .project-list .project-item p span:not(:last-of-type) {
 
 section#Projects .project-list .project-item p span:hover {
   background-color: var(--grey);
-  color: var(--orange);
+}
+
+section#Projects .project-list .project-item p span:hover i {
+  color: var(--blue);
 }
 
 section#Projects .project-list .project-item:hover {

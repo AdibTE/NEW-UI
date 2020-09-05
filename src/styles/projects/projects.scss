@@ -151,13 +151,16 @@ section#Projects {
                     i {
                         color: var(--orange);
                         margin-left: .2rem;
+                        transition: .2s;
                     }
                     &:not(:last-of-type) {
                         margin-left: 1rem;
                     }
                     &:hover {
                         background-color: var(--grey);
-                        color: var(--orange);
+                        i{
+                            color: var(--blue);
+                        }
                     }
                 }
             }

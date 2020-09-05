@@ -153,7 +153,7 @@ section#Home:after, section#Home:before {
   position: absolute;
   width: 400px;
   height: 400px;
-  background: var(--grey);
+  background: var(--lightgrey);
   z-index: -1;
 }
 
@@ -288,7 +288,7 @@ section#UserType .grid {
 
 section#UserType .grid .card {
   background-color: var(--white);
-  border: 3px solid var(--grey);
+  border: 3px solid var(--lightgrey);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +331,7 @@ section#UserType .grid .card a {
 }
 
 section#UserType .grid .card:hover {
-  background-color: var(--grey);
+  background-color: var(--lightgrey);
 }
 
 section#UserType .grid .card:hover a {

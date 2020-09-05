@@ -78,6 +78,10 @@ section#Login {
             text-align: center;
             width: 100%;
             cursor: pointer;
+            transition: .2s;
+            &:hover{
+                box-shadow: 0 0px 10px var(--blue-shadow), 0 0px 20px var(--blue-shadow);
+            }
         }
         .links {
             border-top: 1px dashed var(--grey);
