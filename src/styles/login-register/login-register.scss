@@ -80,7 +80,8 @@ section#Login {
             cursor: pointer;
             transition: .2s;
             &:hover{
-                box-shadow: 0 0px 10px var(--blue-shadow), 0 0px 20px var(--blue-shadow);
+                box-shadow: 0 0px 10px var(--blue-shadow), 0 7px 20px var(--blue-shadow);
+                background-color: var(--brightblue);
             }
         }
         .links {

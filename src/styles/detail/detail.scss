@@ -52,18 +52,23 @@ section#SearchBox {
 			border-radius: 25px;
 			box-shadow: 0 0 10px #5b53ff7d;
 			transition: margin .2s ease, transform .1s ease;
-			cursor: pointer;
+            cursor: pointer;
+            transition: .2s;
 			img {
 				filter: invert(1);
 			}
 			&:active img {
 				animation: searchSpinner 1s linear forwards infinite;
-			}
+            }
+            &:hover{
+                background-color: var(--brightblue);
+
+            }
 		}
 		&:focus-within {
 			border-right-color: var(--blue);
 			button {
-				&:hover {
+				&:focus {
 					transform: scale(.9);
 				}
 			}
@@ -124,26 +129,52 @@ section#Project_Details {
 					margin-left: .5rem;
 				}
 				&:hover {
-                    border-color: var(--blue);
+					border-color: var(--blue);
 				}
 			}
 		}
 	}
 	aside {
-        // background-color: var(--grey);
-        padding: 2rem;
-        .details{
-            display: flex;
-            flex-direction: column;
-            .forceTime{
-                
+        // border-radius: var(--radius);
+		// box-shadow: 0 0 10px var(--grey);
+		padding: 2rem;
+		.details {
+			display: flex;
+			flex-direction: column;
+			color: var(--black);
+			.forceTime {
+                text-align: left;
+                font-size: 12px;
+                font-weight: 600;
+                i{
+                    margin-left: .2rem;
+                }
             }
-            button{
-
+            .price {
+                font-size: 25px;
+                font-weight: 900;
             }
-        }
-        .related{
-
-        }
+			button {
+				background-color: var(--blue);
+				color: white;
+				border: none;
+				border-radius: var(--radius);
+				padding: 1rem;
+				cursor: pointer;
+                transition: .2s;
+                font-weight: 600;
+                font-size: 14px;
+                span{
+                    font-weight: 100;
+                    font-size: 12px;
+                }
+				&:hover {
+                    box-shadow: 0 0 10px var(--blue-shadow), 0 10px 20px var(--blue-shadow);
+                    background-color: var(--brightblue);
+				}
+			}
+		}
+		.related {
+		}
 	}
 }

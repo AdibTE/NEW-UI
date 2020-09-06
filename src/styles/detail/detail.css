@@ -78,6 +78,8 @@ section#SearchBox .search-box button {
   transition: margin .2s ease, transform .1s ease;
   transition: margin .2s ease, transform .1s ease, -webkit-transform .1s ease;
   cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 section#SearchBox .search-box button img {
@@ -90,11 +92,15 @@ section#SearchBox .search-box button:active img {
           animation: searchSpinner 1s linear forwards infinite;
 }
 
+section#SearchBox .search-box button:hover {
+  background-color: var(--brightblue);
+}
+
 section#SearchBox .search-box:focus-within {
   border-right-color: var(--blue);
 }
 
-section#SearchBox .search-box:focus-within button:hover {
+section#SearchBox .search-box:focus-within button:focus {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
@@ -194,5 +200,45 @@ section#Project_Details aside .details {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  color: var(--black);
+}
+
+section#Project_Details aside .details .forceTime {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+section#Project_Details aside .details .forceTime i {
+  margin-left: .2rem;
+}
+
+section#Project_Details aside .details .price {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+section#Project_Details aside .details button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+section#Project_Details aside .details button span {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+section#Project_Details aside .details button:hover {
+  -webkit-box-shadow: 0 0 10px var(--blue-shadow), 0 10px 20px var(--blue-shadow);
+          box-shadow: 0 0 10px var(--blue-shadow), 0 10px 20px var(--blue-shadow);
+  background-color: var(--brightblue);
 }
 /*# sourceMappingURL=detail.css.map */

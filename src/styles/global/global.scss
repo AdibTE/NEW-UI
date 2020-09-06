@@ -22,6 +22,7 @@
 }
 
 :root {
+    --brightblue: #4b42ee;
     --blue: #5c53ff;
     --blue-shadow: #5b53ff3a;
     --lightgrey: #ebe8ff;
@@ -98,7 +99,10 @@ ul {
         position: relative;
         > i {
             margin-left: 1rem;
-            padding: .5rem;
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
             border-radius: var(--radius);
             color: white;
             &.fa-check {

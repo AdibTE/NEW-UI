@@ -105,6 +105,11 @@ section#CreateProject {
             text-align: center;
             width: 100%;
             cursor: pointer;
+            transition: .4s;
+            &:hover{
+                box-shadow: 0 0px 10px var(--blue-shadow), 0 7px 20px var(--blue-shadow);
+                background-color: var(--brightblue);
+            }
         }
     }
     .steps-container {
