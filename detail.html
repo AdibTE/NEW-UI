@@ -43,19 +43,7 @@
             </div>
         </nav>
     </header>
-    <section id="SearchBox" class="container">
-        <form class="search-box">
-            <select id="projects">
-                <option value="all">
-                    همه پروژه ها <i class="fas fa-angle-down"></i>
-                </option>
-                <option value="mine">پروژه های من</option>
-            </select>
-            <i class="fas fa-angle-down"></i>
-            <input type="text" placeholder="جستجو در میان هزاران پروژه...">
-            <button><img src="./src/images/icons/search-24px.svg"></button>
-        </form>
-    </section>
+    
     <section id="Project_Details" class="container">
         <main>
             <h1>این یک عنوان پیشفرض است</h1>
@@ -83,16 +71,17 @@
         </main>
         <aside>
             <div class="details">
-                <div class="forceTime">
+                <!-- <div class="price">
+                    ۵۰۰,۰۰۰ تومان
+                </div> -->
+                <!-- <button>ثبت پروژه <span>(تحویل در ۲۰ روز)</span></button> -->
+                <button>پرداخت <span>(۵۰۰,۰۰۰ تومان)</span></button>
+                <!-- <div class="forceTime">
                     <i class="fas fa-clock"></i>
                     <span>تحویل تا ۲۴ شهریور ۱۳۹۹</span>
-                </div>
-                <div class="price">
-                    ۵۰۰,۰۰۰ تومان
-                </div>
-                <button>ثبت پروژه <span>(تحویل در ۲۰ روز)</span></button>
+                </div> -->
             </div>
-            <div class="related">
+            <!-- <div class="related">
                 <span>پروژه‌های مشابه:</span>
                 <a href="#" class="project">
                     <h2>این یک عنوان پیشفرض است است است است است است است</h2>
@@ -106,8 +95,49 @@
                     <h2>این یک عنوان پیشفرض است</h2>
                     <span class="price">۱۲۰,۰۰۰ تومان</span>
                 </a>
+            </div> -->
+            <div class="employer-box">
+                <div class="options">
+                    <div class="item">
+                        <span class="label">نام کارجو</span>
+                        <span class="value">احمد قلی خانی</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">وضعیت پروژه</span>
+                        <span class="value">در حال انجام توسط کارجو</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">تاریخ تحویل</span>
+                        <span class="value">۲۴ شهریور ۱۳۹۹</span>
+                    </div>
+                    <div class="item">
+                        <span class="label">فایل پیش‌نمایش</span>
+                        <a href="#" target="_blank" class="file">نمایش</a>
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="edit">
+                        <i class="fas fa-edit"></i> ویرایش پروژه
+                    </div>
+                    <div class="delete">
+                        <i class="fas fa-trash"></i> حذف پروژه
+                    </div>
+                </div>
             </div>
         </aside>
+    </section>
+    <section id="SearchBox" class="container">
+        <form class="search-box">
+            <select id="projects">
+                <option value="all">
+                    همه پروژه ها <i class="fas fa-angle-down"></i>
+                </option>
+                <option value="mine">پروژه های من</option>
+            </select>
+            <i class="fas fa-angle-down"></i>
+            <input type="text" placeholder="جستجو در میان هزاران پروژه...">
+            <button><img src="./src/images/icons/search-24px.svg"></button>
+        </form>
     </section>
     <footer>
         <a href="/"><img src="./src/images/logo-2.png" alt=""></a>

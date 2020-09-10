@@ -113,6 +113,7 @@ section#Project_Details {
   grid-gap: 1rem;
   direction: rtl;
   margin-bottom: 3rem;
+  margin-top: 3rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -192,7 +193,7 @@ section#Project_Details main .attachments a:hover {
 }
 
 section#Project_Details aside {
-  padding: 0 2rem;
+  padding: 2rem 2rem 0;
 }
 
 section#Project_Details aside .details {
@@ -206,20 +207,11 @@ section#Project_Details aside .details {
   color: var(--black);
 }
 
-section#Project_Details aside .details .forceTime {
-  text-align: left;
-  font-size: 12px;
-}
-
-section#Project_Details aside .details .forceTime i {
-  margin-left: .2rem;
-  color: var(--orange);
-}
-
 section#Project_Details aside .details .price {
   font-size: 22px;
   font-weight: 900;
-  margin-bottom: .5rem;
+  margin-bottom: .3rem;
+  text-align: center;
 }
 
 section#Project_Details aside .details button {
@@ -246,6 +238,17 @@ section#Project_Details aside .details button:hover {
   background-color: var(--brightblue);
 }
 
+section#Project_Details aside .details .forceTime {
+  text-align: right;
+  font-size: 12px;
+  margin-top: .5rem;
+}
+
+section#Project_Details aside .details .forceTime i {
+  margin-left: .2rem;
+  color: var(--orange);
+}
+
 section#Project_Details aside .related {
   margin-top: 2rem;
 }
@@ -253,14 +256,12 @@ section#Project_Details aside .related {
 section#Project_Details aside .related > span {
   color: var(--black);
   font-size: 12px;
-  font-weight: 900;
 }
 
 section#Project_Details aside .related .project {
   width: 100%;
   border-radius: var(--radius);
-  -webkit-box-shadow: 0 0 10px var(--grey);
-          box-shadow: 0 0 10px var(--grey);
+  border: 1px solid var(--lightgrey);
   padding: 1rem;
   color: var(--black);
   margin-bottom: .5rem;
@@ -288,11 +289,105 @@ section#Project_Details aside .related .project span {
 
 section#Project_Details aside .related .project:hover {
   color: var(--blue);
-  -webkit-box-shadow: 0 0 10px var(--grey), 0 0 20px var(--blue-shadow);
-          box-shadow: 0 0 10px var(--grey), 0 0 20px var(--blue-shadow);
+  -webkit-box-shadow: 0 0 10px var(--grey), 0 0 20px var(--lightgrey);
+          box-shadow: 0 0 10px var(--grey), 0 0 20px var(--lightgrey);
 }
 
 section#Project_Details aside .related .project:hover span {
   color: var(--blue);
+}
+
+section#Project_Details aside .employer-box {
+  margin-top: 2rem;
+}
+
+section#Project_Details aside .employer-box .options {
+  padding: 1rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: var(--radius);
+  border: 1px solid var(--lightgrey);
+  color: var(--black);
+}
+
+section#Project_Details aside .employer-box .options .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  padding: .3rem 0;
+  font-size: 14px;
+}
+
+section#Project_Details aside .employer-box .options .item .label {
+  font-weight: 900;
+}
+
+section#Project_Details aside .employer-box .options .item .file {
+  background: var(--orange);
+  padding: 0 1rem;
+  color: white;
+  border-radius: var(--radius);
+}
+
+section#Project_Details aside .employer-box .options .item:not(:last-of-type) {
+  border-bottom: 1px solid var(--lightgrey);
+}
+
+section#Project_Details aside .employer-box .actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: .5rem;
+}
+
+section#Project_Details aside .employer-box .actions .edit,
+section#Project_Details aside .employer-box .actions .delete {
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  margin-bottom: .5rem;
+  color: var(--black);
+}
+
+section#Project_Details aside .employer-box .actions .edit i,
+section#Project_Details aside .employer-box .actions .delete i {
+  font-size: 10px;
+}
+
+section#Project_Details aside .employer-box .actions .edit:hover,
+section#Project_Details aside .employer-box .actions .delete:hover {
+  color: var(--blue);
+}
+
+section#Project_Details aside .employer-box .actions .edit.delete,
+section#Project_Details aside .employer-box .actions .delete.delete {
+  padding-right: .5rem;
+  margin-right: .5rem;
+  border-right: 1px solid var(--lightgrey);
+}
+
+section#Project_Details aside .employer-box .actions .edit.delete:hover,
+section#Project_Details aside .employer-box .actions .delete.delete:hover {
+  color: #f14343;
 }
 /*# sourceMappingURL=detail.css.map */
