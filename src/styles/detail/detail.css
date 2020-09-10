@@ -113,6 +113,9 @@ section#Project_Details {
   grid-gap: 1rem;
   direction: rtl;
   margin-bottom: 3rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 section#Project_Details main {
@@ -189,7 +192,7 @@ section#Project_Details main .attachments a:hover {
 }
 
 section#Project_Details aside {
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 section#Project_Details aside .details {
@@ -206,16 +209,17 @@ section#Project_Details aside .details {
 section#Project_Details aside .details .forceTime {
   text-align: left;
   font-size: 12px;
-  font-weight: 600;
 }
 
 section#Project_Details aside .details .forceTime i {
   margin-left: .2rem;
+  color: var(--orange);
 }
 
 section#Project_Details aside .details .price {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 900;
+  margin-bottom: .5rem;
 }
 
 section#Project_Details aside .details button {
@@ -240,5 +244,55 @@ section#Project_Details aside .details button:hover {
   -webkit-box-shadow: 0 0 10px var(--blue-shadow), 0 10px 20px var(--blue-shadow);
           box-shadow: 0 0 10px var(--blue-shadow), 0 10px 20px var(--blue-shadow);
   background-color: var(--brightblue);
+}
+
+section#Project_Details aside .related {
+  margin-top: 2rem;
+}
+
+section#Project_Details aside .related > span {
+  color: var(--black);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+section#Project_Details aside .related .project {
+  width: 100%;
+  border-radius: var(--radius);
+  -webkit-box-shadow: 0 0 10px var(--grey);
+          box-shadow: 0 0 10px var(--grey);
+  padding: 1rem;
+  color: var(--black);
+  margin-bottom: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#Project_Details aside .related .project h2 {
+  font-size: 12px;
+  font-weight: 100;
+  width: 37ch;
+  overflow: hidden;
+}
+
+section#Project_Details aside .related .project span {
+  color: var(--darkgrey);
+}
+
+section#Project_Details aside .related .project:hover {
+  color: var(--blue);
+  -webkit-box-shadow: 0 0 10px var(--grey), 0 0 20px var(--blue-shadow);
+          box-shadow: 0 0 10px var(--grey), 0 0 20px var(--blue-shadow);
+}
+
+section#Project_Details aside .related .project:hover span {
+  color: var(--blue);
 }
 /*# sourceMappingURL=detail.css.map */
